@@ -1,0 +1,51 @@
+.chart{
+	text-align:center;
+	cursor:pointer;
+	}
+
+	#ChartArea{
+	width:600px;
+	height:300px;
+	}
+
+	#tableArea{
+	width:600px;
+	text-align:center;
+	}
+
+	.selectedChart{
+	font-weight:bold;
+	}
+	
+	.tit{
+	text-align:center;
+	background-color:#f7f7fd;
+	border:1px solid #bbd3fd;
+	}
+
+
+
+	#view_SNSContent{
+	z-index: 99999; 
+	position:absolute;  
+	width:500px; height:180px; 
+	background-color:#ffffff;
+	margin-left:100px;
+	margin-top:150px;
+	border:2px solid #757575;
+	display:none;
+	}
+	
+
+	#view_SNSContent div .title{
+	background-color:#757575;
+	color:#ffffff;
+
+	}
+	#view_SNSContent div .closeLayer{
+	background-color:#757575;
+	color:#ffffff;
+
+	}
+
+	

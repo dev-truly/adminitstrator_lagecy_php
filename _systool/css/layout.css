@@ -1,0 +1,163 @@
+@charset 'utf-8';
+
+#wrap{
+
+}
+
+#header{
+	overflow:hidden; zoom:1;
+	background:url(/images/bg/header_bg.jpg) repeat-x 0 0;
+	height:49px;
+	border-bottom:1px solid #dbdbdb;
+}
+
+.h-h1{
+	width:187px;
+	float:left;
+	padding:10px 0 0 15px;
+}
+
+.navi{
+	/*float:left;*/
+	padding:14px 0 0 25px;
+}
+
+.navi li{
+	width:86px;
+	float:left;
+	text-align:center;
+	background:url(/images/bullet/gray_stick.gif) no-repeat right 2px;
+}
+
+.navi li.navi-last{
+	background:none;
+	width:110px;
+}
+
+.login{
+	float:right;
+	padding:11px 20px 0 0;
+}
+
+#container{
+	position:relative;
+}
+
+.left-menu{
+	position:absolute; left:0; top:0;
+	border-right:1px solid #dbdbdb;
+	background:url(/images/bg/left_bg.jpg) repeat-y 0 0;
+	width:182px; min-height:537px; _height:537px;
+	padding:15px 0 0 18px;
+}
+
+.l-navi{
+	font-size:13px; font-weight:bold;
+	color:#3d3d3d;
+}
+
+.left-navi ul .l-navi a{
+	color:#3d3d3d;
+	text-decoration:none;
+}
+
+.l-navi img{
+	vertical-align:middle;
+	margin-top:-3px;
+}
+
+.l-navi-ul{
+	font-size:12px; font-weight:normal;
+	color:#3d3d3d;
+	padding:4px 0 22px 17px;
+}
+
+.l-navi-ul li{
+	line-height:20px;
+}
+
+.l-navi .l-navi-ul li a{
+	color:#3d3d3d;
+	text-decoration:none;
+}
+
+.hide-icon{
+	position:absolute; right:-1px; top:11px;
+}
+
+.content{
+	overflow:hidden;
+	*zoom:1;
+	margin-left:201px;_margin-left:0;
+	_padding-left:201px;
+}
+
+.show-icon{
+	position:absolute; left:200px; top:11px;
+}
+.iframe-box {
+	padding:21px 0 0 28px;
+}
+
+
+#footer{
+	border-top:1px solid #dbdbdb;
+	padding:0 0 50px;
+	width:100%;
+}
+
+#footer p{
+	text-align:center;
+	padding-top:13px;
+}
+
+
+/* paing */
+
+.paging{
+	text-align:center;
+	font-size:11px;
+	padding-top:11px;
+	letter-spacing:3px;
+	line-height:15px;
+}
+
+.dataTablediv .paging a{
+	color:#4d4d4f;
+	text-decoration:none;
+}
+
+.paging .first{
+	display:inline-block;
+	background:url(/images/icon/arr_l2.gif) no-repeat 0 1px;
+	width:14px; height:15px;
+	padding-right:5px;
+}
+
+.paging .last{
+	display:inline-block;
+	background:url(/images/icon/arr_r2.gif) no-repeat 0 1px;
+	width:14px; height:15px;
+	padding-left:10px;
+}
+
+.codesearchbox {
+	padding:5px 0 5px 0;
+	clear:both;
+}
+
+.searchlist {
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

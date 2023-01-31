@@ -1,0 +1,104 @@
+<?php
+	include ('../../_admin/_include/sysproctop.php');
+
+	/* ------------------------------------------------
+	*	- 도움말 - 넘어오는 값
+	*  ------------------------------------------------
+	*/
+	$proc					= trimPostRequest('proc');							//------------ 처리구분
+	$mIndex					= trimPostRequest('m_index');	
+	$mppIndex				= trimPostRequest('mpp_index');						//------------ 일련번호
+	$mppName				= trimPostRequest('mpp_name');						//------------ 이름
+	$mppPatchUrl			= trimPostRequest('mpp_patchurl');					//------------ 패치url
+	$mppContents			= trimPostRequest('mpp_contents');					//------------ 내용
+	$mppSubject				= trimPostRequest('mpp_subject');					//------------ 제목
+	$mppType				= trimPostRequest('mpp_type');						//------------ 패치구분
+
+	$xUidx			= $_POST['xUidx'];				//------------ 일련번호
+
+	$listCnt		= $_POST['listCnt'];				//------------ 출력되는 리스트 수
+	$page			= $_POST['page'];				//------------ 현재 페이지
+
+	$selectType		= $_POST['selectType'];			//------------ 검색 조건
+	$selectValue	= $_POST['selectValue'];			//------------ 검색값
+	$sort			= $_POST['sort'];				//------------ 검색값
+
+	/* ------------------------------------------------
+	*	- 도움말 - get데이터로 넘길값 생성
+	*  ------------------------------------------------
+	*/
+	$getStr ='';
+	$getStr = getStr($getStr,'xUidx',$mIndex);
+	$getStr = getStr($getStr,'listCnt',$listCnt);
+	$getStr = getStr($getStr,'page',$page);
+	$getStr = getStr($getStr,'selectType',$selectType);
+	$getStr = getStr($getStr,'selectValue',$selectValue);
+	$getStr = getStr($getStr,'sort',$sort);
+
+	/* ------------------------------------------------
+	*	- 도움말 - 등록 데이터 생성
+	*  ------------------------------------------------
+	*/
+	$mppIp					= $_SERVER['REMOTE_ADDR'];			//------------ ip
+	$mppDate				= date('Y-m-d H:i:s');				// 등록, 수정, 삭제일
+	$mmIndex				= $_SESSION['sess']['mmIndex'];
+
+	/* ------------------------------------------------
+	*	- 도움말 - 초기화
+	*  ------------------------------------------------
+	*/
+	$falseUrl = '';
+	$trueUrl =  '../../_systool/manual/_view.php?' . $getStr;
+
+	
+	/* ------------------------------------------------
+	*	- 도움말 - 데이터 변환 진행 addItem('필드명','삽입데이터','데이터형')
+	*  ------------------------------------------------
+	*/
+	$dataString = class_load('string');
+
+	$dataString->addItem('mpp_name', $mppName, 'C');
+	$dataString->addItem('mpp_ip', $mppIp, 'C');
+	$dataString->addItem('mpp_contents', $mppContents, 'C');
+	$dataString->addItem('mpp_subject', $mppSubject, 'C');
+	$dataString->addItem('mpp_patchurl', $mppPatchUrl, 'C');
+	$dataString->addItem('mm_index', $mmIndex, 'C');
+	$dataString->addItem('mpp_type', $mppType, 'C');
+	$dataString->addItem('mpp_deleteFl','n','C');
+
+		
+	/* ------------------------------------------------
+	*	- 도움말 - 데이터 변환 후 등록,수정,삭제
+	*  ------------------------------------------------
+	*/
+	if ($proc == 'WRITE') {			//등록
+
+		$dataString->addItem('mpp_writedate', $mppDate, 'C');
+		$dataString->addItem('m_index', $mIndex, 'C');
+	
+
+		list($insertColumn, $insertValue) = $dataString->getInsert(); //인서트메소드로 $dataString인서트문 생성
+		$processQuery = "Insert Into " . GD_MANUAL_PROCESS_PATCH . " (" . $insertColumn . ") Values (" . $insertValue . ")";
+	}
+	else if ($proc == 'MODIFY') {	// 수정
+		$dataString->addItem('mpp_editdate', $mppDate, 'C');
+
+		$updateValue = $dataString->getUpdate();
+		$processQuery = "Update " . GD_MANUAL_PROCESS_PATCH . " Set " . $updateValue . " Where mpp_index = '" . $mppIndex . "'";
+	}
+	else {							// 삭제
+		$dataString->addItem('mpp_editdate', $mDate, 'C');
+		$processQuery = "Update " . GD_MANUAL_PROCESS_PATCH . " Set mpp_deleteFl = 'y', mpp_editdate = '" . $mppDate . "' Where mpp_index = '" . $mppIndex . "'";
+	}
+	
+	/* ------------------------------------------------
+	*	- 도움말 - 처리 결과
+	*  ------------------------------------------------
+	*/
+	//echo $processQuery;exit;
+	$db->query($processQuery) or die(setXMLValueURL('false', '저장에 실패하였습니다.', $falseUrl));
+	//$db->query($processQuery) or die(mysql_error().$processQuery); //쿼리 에러시 확인
+	
+	setXMLValueURL('true', '정상적으로 저장 하였습니다.', $trueUrl);
+?>
+

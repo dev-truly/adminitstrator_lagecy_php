@@ -1,0 +1,561 @@
+@charset 'utf-8';
+
+
+/* 컨텐츠 내용의 테이블  */
+.dataTablediv{
+	/*border:1px solid red;*/
+	margin-top:-20px;
+	padding-bottom:5px;
+	background:url("/images/bg/class_room_bg.jpg") no-repeat 0 0;
+}
+
+.dataTablediv table{
+	width:977px;
+}
+
+.dataTablediv table th{
+	text-align:center;
+	color:#606060;
+	font-weight:normal;
+	padding:10px 0 9px 0;
+}
+
+.dataTablediv table th.left{
+	text-align:left;
+	padding-left:30px;
+}
+
+.dataTablediv table td{
+	text-align:center;
+	color:#717172;
+	border-bottom:1px solid #cccccc;
+	padding:11px 0 10px 0;
+}
+
+.dataTablediv table td.left{
+	text-align:left;
+	padding-left:30px;
+}
+
+
+.dataTablediv table .btn_tb_td{
+	padding:0;
+}
+
+.dataTablediv table .tfoot_td{
+	border:none;
+	height:0;
+	padding:0;
+}
+
+
+
+/* 권장사양 테이블 */
+.dataTablediv_1{
+	width:100%;
+	border-top:1px solid #cccccc; border-left:1px solid #cccccc;
+}
+
+.dataTablediv_1 th{
+	background:#f2f2f2;
+	border-bottom:1px solid #cccccc; border-right:1px solid #cccccc;
+	color:#a5a5a5;
+	text-align:left;
+	padding:7px 0 4px 10px;
+}
+
+.dataTablediv_1 td{
+	border-bottom:1px solid #cccccc; border-right:1px solid #cccccc;
+	color:#888888;
+	padding:5px 0 4px 10px;
+}
+
+
+
+/* 회원가입 개인정보입력 */
+.dataTablediv_2{
+	width:100%;
+}
+
+.dataTablediv_2 th{
+	color:#818181;
+	padding:6px 0 4px 0;
+	vertical-align:middle;
+}
+
+.dataTablediv_2 td{
+	color:#969696;
+	padding-bottom:3px;
+	vertical-align:middle;
+}
+
+.dataTablediv_2 .td_con{
+	padding-top:1px;
+}
+
+.dataTablediv_2 .span_con{
+	margin-top:-3px;
+	display:block;
+}
+
+/* 수업일정 캘린더 */
+.calendar_table{
+	width:100%;
+	border-top:1px solid #a0a0a0; border-left:1px solid #a0a0a0;
+}
+
+.calendar_table th{
+	border-right:1px solid #a0a0a0; border-bottom:1px solid #a0a0a0;
+	background:#f8f8f8;
+	font-weight:bold;
+	text-align:center;
+	height:35px;
+}
+
+.calendar_table th.red{
+	color:#d31a1a;
+}
+
+.calendar_table th.blue{
+	color:#2680aa;
+}
+
+
+.calendar_table td{
+	border-right:1px solid #a0a0a0; border-bottom:1px solid #a0a0a0;
+}
+
+.calendar_table td a{
+	display:block;
+	width:99px;
+	height:64px;
+	color:#606060;
+	text-decoration:none;
+}
+
+.calendar_table td .calendar_span1{
+	color:#606060;
+	display:block;
+	padding:8px 0 0 12px;
+	font-size:11px;
+}
+
+.calendar_table td .calendar_span2{
+	display:block;
+	background:url('/images/myclass/txt/calendar_txt1.gif') no-repeat right 13px;
+	height:39px;
+	width:90px;
+}
+
+.calendar_table td .sa_blue{
+	color:#2680c5;
+}
+
+.calendar_table td .su_red{
+	color:#d3194e;
+}
+
+/* layer_tab_table */
+.layer_tab_table{
+	width:100%;
+	border-top:1px solid #a0a0a0; border-left:1px solid #a0a0a0;
+	table-layout: fixed;
+}
+
+.layer_tab_table th{
+	border-bottom:1px solid #a0a0a0; border-right:1px solid #a0a0a0;
+	background:#f6f6f6;
+	padding-top:3px;
+	height:21px;
+	text-align:center;
+	font-weight:bold;
+	color:#858585;
+}
+
+.layer_tab_table td{
+	border-bottom:1px solid #a0a0a0; border-right:1px solid #a0a0a0;
+	padding-left:8px; padding-top:3px;
+}
+
+.layer_tab_table .content{
+	padding:20px;
+	line-height:20px;
+	height:500px;
+	vertical-align:top;
+}
+
+
+
+
+
+/* ID PW 찾기 */
+.idpw_search_table{
+	width:100%;
+}
+
+.idpw_search_table th{
+	padding-bottom:5px;
+}
+
+.idpw_search_table td{
+	padding-bottom:7px;
+}
+
+
+
+
+
+
+
+
+
+/* lesson report */
+.layer_tb{
+	table-layout: fixed;
+	width:100%;
+}
+
+.layer_tb th{
+	color:#858585;
+	font-weight:bold;
+	text-align:center;
+	background:#f6f6f6;
+	padding:5px 0 5px 0;
+	border-bottom:1px solid #a0a0a0; border-right:1px solid #a0a0a0;
+}
+
+.layer_tb td{
+	color:#595959;
+	padding:4px 8px 6px 8px;
+	line-height:15px;
+	border-bottom:1px solid #a0a0a0; border-right:1px solid #a0a0a0;
+}
+
+.layer_tb td.bor_r_none{
+	border-right:none;
+}
+
+.layer_tb td.word-breck{
+	word-break:break-all;
+	word-wrap: break-word;
+}
+
+.layer_tb td.right{
+	text-align:right;
+}
+
+.border_b_none th,
+.border_b_none td{
+	border-bottom:none;
+}
+
+.btm-pd-top th,
+.btm-pd-top td{
+	padding-top:9px;
+}
+
+.layer_tb thead th{
+	background:none;
+	border:none;
+	padding:0;
+}
+
+.layer_tb thead th.top_l_bg{
+	background:url('/images/bg/report_t_left.jpg') no-repeat 0 0;
+	height:2px;
+}
+
+.layer_tb thead th.top_c_bg1{
+	background:#f6f6f6 url('/images/bg/report_t_c1.jpg') repeat-x right 0;
+	height:2px;
+}
+
+.layer_tb thead th.top_c_bg2{
+	background:#ffffff url('/images/bg/report_t_c2.jpg') repeat-x right 0;
+	height:2px;
+}
+
+.layer_tb thead th.top_c_bg3{
+	background:#f6f6f6 url('/images/bg/report_t_c3.jpg') repeat-x right 0;
+	height:2px;
+}
+
+.layer_tb thead th.top_c_bg4{
+	background:#ffffff url('/images/bg/report_t_c4.jpg') repeat-x right 0;
+	height:2px;
+}
+
+.layer_tb thead th.top_r_bg{
+	background:url('/images/bg/report_t_right.jpg') no-repeat right 0;
+	height:2px;
+}
+
+.layer_tb tbody td.left_border{
+	border-left:1px solid #cccccc;
+	border-right:none;
+	background:#f6f6f6;
+}
+
+.layer_tb tbody td.right_border{
+	border-right:1px solid #cccccc;
+}
+
+.layer_tb tbody td.b_right_none{
+	border-right:none;
+}
+
+
+.layer_tb tfoot th{
+	background:none;
+	border:none;
+	padding:0;
+}
+
+.layer_tb tfoot th.btm_l_bg{
+	background:url('/images/bg/report_b_left.jpg') no-repeat left bottom;
+	height:2px;
+}
+
+.layer_tb tfoot th.btm_c_bg1{
+	background:#f6f6f6 url('/images/bg/report_b_c1.jpg') repeat-x right bottom;
+	height:2px;
+}
+
+.layer_tb tfoot th.btm_c_bg2{
+	background:#ffffff url('/images/bg/report_b_c2.jpg') repeat-x right bottom;
+	height:2px;
+}
+
+.layer_tb tfoot th.btm_r_bg{
+	background:url('/images/bg/report_b_right.jpg') no-repeat right bottom;
+	height:2px;
+}
+
+
+
+
+/* board-list */
+.total {
+	margin:18px 19px 6px 0;
+	text-align:right;
+}
+.total span {
+	display:inline-block;
+	height:14px;
+	padding:2px 0 0 18px;
+	background:url('/images/bg/blt_total.gif') no-repeat left top;
+	color:#239bd2;
+}
+.board-list tr.first {
+	background:#f9fafa;
+}
+.board-list tr.first th {
+	padding:10px 0;
+}
+.board-list td.board-left {
+	text-align:left;
+	padding:0 0 0 59px;
+}
+.iconImg {
+	margin:0 0 0 6px;
+}
+.iconImg img {
+	vertical-align:top;
+}
+.btn-right {
+	padding:6px 3px 7px 0;
+	border-bottom:2px solid #ccc;
+	text-align:right;
+}
+.btn-right .btn_type9_con {
+	margin:0 5px 0 0;
+	_padding:0 13px 0 5px;
+	_margin:-23px 0 0;
+}
+.btn-right .btn_type9_txt a {
+	color:#858585;
+}
+.btn-right .btn_type15_txt a {
+	color:#3a7d9c;
+}
+
+.search-box {
+	overflow:hidden;
+	width:100%;
+	margin:20px 0 4px;
+	text-align:center;
+}
+
+.search-box input {
+	margin:1px 2px 0 5px;
+	vertical-align:top;
+}
+.search-box select {
+	margin:2px 0 0;
+	vertical-align:top;
+}
+.search-box .btn_type2_left {
+	margin:0 -4px -6px 0;
+	*margin:0 0 -6px;
+	_margin:0 0 0;
+}
+.search-box .btn_type2_con {
+	*padding:1px 13px 0 5px;
+	_padding:0 13px 0 5px;
+	_margin:-24px 0 0;
+}
+/* board-write */
+.board-writeDiv {
+	margin:19px 0 0;
+	padding:0 0 5px;
+	border-top:2px solid #ccc;
+	background:none;
+}
+.board-writeDiv td.last input {
+	border:none;
+}
+td.board-write {
+	margin:19px 0 0;
+	background:url('/images/bullet/blt_write.gif') no-repeat 6px 19px;
+}
+.board-write td .checkbox {
+	vertical-align:middle;
+	margin:0 3px 0 0;
+}
+.btn-write {
+	margin:14px 0 50px;
+	text-align:center;
+}
+.btn-write .btn_type3_con {
+	_padding:0 13px 0 5px;
+	_margin:-23px 0 0;
+}
+.btn-write .btn_type2_con {
+	_padding:0 13px 0 5px;
+	_margin:-23px 0 0;
+}
+.btn-write.type2 .btn_type3_left {
+	_margin:0 0 -3px;
+}
+.btn-write.type2 .btn_type2_left {
+	_margin:0 0 -3px;
+}
+/* board-view */
+.board-view {
+	border-top:2px solid #ccc;
+}
+.board-view table {
+	width:100%;
+}
+.board-view thead th {
+	text-align:left;
+	padding:14px 0 9px 34px;
+	border-bottom:1px solid #ccc;
+	background:#fbfbfb;
+}
+.board-view tbody th {
+	padding:11px 0 10px 7px;
+	border-bottom:1px solid #ccc;
+	background:url('/images/bullet/blt_write.gif') no-repeat 0 15px;
+}
+.board-view tbody td {
+	padding:11px 0 10px;
+	border-bottom:1px solid #ccc;
+}
+.board-view tbody th.first {
+	padding:11px 0 10px 35px;
+	background-position:28px 15px;
+}
+.board-viewCont {
+	padding:26px 34px 0 34px;
+	word-break:break-all;word-wrap:break-word;
+}
+.btn-right.type1 {
+	margin:131px 0 0;
+	border-top:2px solid #ccc;
+	border-bottom:none;
+}
+.btn-right .btn_type15_con {
+	margin: 0 5px 0 0;
+	_padding:0 13px 0 5px;
+	_margin:-23px 0 0;
+}
+.board-viewReply {
+	margin:23px 0 0;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ededed;
+	border-left:1px solid #ededed;
+	border-bottom:1px solid #ededed;
+}
+.board-viewReply.type1 {
+	margin:10px 0 0;
+}
+.board-viewReply table {
+	width:100%;
+	background:#fbfbfb;
+}
+.board-viewReply table th {
+	padding:7px 0 7px 33px;
+	color:#238db3;
+}
+.board-viewReply table th img {
+	vertical-align:middle;
+}
+.board-viewReply table th span.day {
+	margin:0 0 0 6px;
+	font-size:11px;
+	color:#858585;
+}
+.board-viewReply table th.btn {
+	text-align:right;
+	padding:0 8px 0 0;
+}
+.board-viewReply table td {
+	padding:15px 33px 17px 33px;
+	border-top:1px dashed #d3d3d3;
+	word-break:break-all;
+	word-wrap:break-word !important;
+}
+.board-viewReply table tr.line th {
+	border-top:1px dashed #d3d3d3;
+}
+.board-viewReply table span.reply {
+	position:relative;
+	top:-4px;
+}
+.reply-enter {
+	margin:10px 0 0;
+	padding:3px 0 32px;
+	background:url('/images/bg/bg_reply_enter.gif') no-repeat 0 0;
+}
+.reply-enter1 {
+	padding:0 0 3px;
+	background:url('/images/bg/bg_reply_enter_bottom.gif') no-repeat 0 100%;
+}
+.reply-enter2 {
+	padding:6px 9px 8px 11px;
+	background:url('/images/bg/bg_reply_enter_con.gif') repeat-y 0 0;
+}
+.reply-enter2 .btn-box {
+	overflow:hidden;
+	width:100%;
+}
+.reply-enter2 .btn-box p.fl {
+	float:left;
+}
+.reply-enter2 .btn-box p.fr {
+	float:right;
+}
+.reply-enter2 .enter {
+	margin:8px 0 0;
+}
+.reply-enter2 .enter textarea {
+	width:837px;
+	margin:0 6px 0 0;
+	padding:5px 0 0 5px;
+	background:#fff;
+}
+.reply-enter2 .enter a img {
+	vertical-align:middle;
+}
+

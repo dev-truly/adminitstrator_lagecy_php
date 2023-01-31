@@ -1,0 +1,82 @@
+@charset 'utf-8';
+
+/*공통 reset */
+@import url('base.css');
+/*공통 테이블 */
+@import url('datatable.css');
+/*공통 버튼 */
+@import url('button.css');
+/*공통 레이아웃 */
+@import url('layout.css');
+/*공통 팝업 */
+@import url('popup.css');
+/*공통 달력 */
+@import url('calendar.css');
+
+.tab-title-box{
+	overflow:hidden; zoom:1;
+	background:#eeeff8;
+	border-bottom:1px solid #5662be;
+}
+
+.menu-tab{
+	float:left;
+	padding:8px 0 0 28px;
+}
+
+.menu-tab1{
+	float:left;
+	padding-right:1px;
+}
+
+.tab-btn{
+	float:right;
+	padding:7px 20px 0 0;
+}
+
+.frame-title {
+	padding:0 0 0 12px;
+	background:url('/images/bullet/tit_stick.gif') no-repeat left top;
+	font-size:14px;
+	font-weight:bold;
+	color:#3d3d3d;
+}
+.frame-title span {
+	margin:0 0 0 6px;
+	font-size:11px;
+	font-weight:normal;
+	color:#757575;
+}
+
+.search-boxT {
+	width:763px;
+	padding:5px 0 0;
+	margin:14px 0 0;
+	background:url('/images/bg/bg_search_top.gif') no-repeat left top;
+	line-height:14px;
+}
+.search-boxC {
+	overflow:hidden;
+	zoom:1;
+	padding:11px 0 16px 25px;
+	background:url('/images/bg/bg_search_con.gif') repeat-y left top;
+}
+.search-boxB {
+	padding:0 0 4px;
+	background:url('/images/bg/bg_search_bottom.gif') no-repeat left bottom;
+}
+.member-num {
+	padding:0 0 0 11px;
+	background:url('/images/bullet/blt_memberNum.gif') no-repeat left 5px;
+}
+.day {
+	float:left;
+	margin:11px 0 0;
+}
+.search-boxC .btn-search {
+	margin:10px 0 0 10px;
+}
+
+
+
+
